@@ -46,7 +46,8 @@ defmodule EMeterWeb.MixProject do
       {:gettext, "~> 0.11"},
       {:e_meter, in_umbrella: true},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:postgres, in_umbrella: true}
     ]
   end
 

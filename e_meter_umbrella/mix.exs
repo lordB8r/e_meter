@@ -39,7 +39,9 @@ defmodule EMeter.Umbrella.MixProject do
   defp aliases do
     [
       # run `mix setup` in all child apps
-      setup: ["cmd mix setup"]
+      setup: ["cmd mix setup"],
+      "ecto.setup": ["ecto.create", "ecto.migrate", "run apps/postgres/priv/repo/seeds.exs"],
+      "ecto.reset": ["ecto.drop", "ecto.setup"]
     ]
   end
 end

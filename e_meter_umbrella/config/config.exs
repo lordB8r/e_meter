@@ -9,7 +9,8 @@
 # move said applications out of the umbrella.
 use Mix.Config
 
-
+config :postgres,
+  ecto_repos: [Postgres.Repo]
 
 config :e_meter_web,
   generators: [context_app: :e_meter]
